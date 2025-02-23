@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --primary: 15, 23, 42;
-  --primary-light: 30, 41, 59;
-  --secondary: 148, 163, 184;
-  --accent: 234, 179, 8;
-  --background: 241, 245, 249;
-  --text: 51, 65, 85;
+  --primary: 20, 33, 61;
+  --primary-light: 37, 52, 92;
+  --secondary: 208, 240, 255;
+  --accent: 252, 211, 77;
+  --background: 15, 23, 42;
+  --text: 226, 232, 240;
 }
 
 body {
@@ -44,3 +44,30 @@ body {
   color: rgb(var(--accent));
 }
 
+.bg-gradient-custom {
+  background: linear-gradient(to bottom, rgb(var(--primary)), rgb(var(--background)));
+}
+
+.shadow-glow {
+  box-shadow: 0 4px 15px rgba(var(--accent), 0.3);
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+
+
+@layer base {}
+
+
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

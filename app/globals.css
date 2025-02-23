@@ -3,25 +3,44 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --primary: 15, 23, 42;
+  --primary-light: 30, 41, 59;
+  --secondary: 148, 163, 184;
+  --accent: 234, 179, 8;
+  --background: 241, 245, 249;
+  --text: 51, 65, 85;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(var(--text));
+  background: rgb(var(--background));
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.bg-primary {
+  background-color: rgb(var(--primary));
 }
+
+.bg-primary-light {
+  background-color: rgb(var(--primary-light));
+}
+
+.text-primary {
+  color: rgb(var(--primary));
+}
+
+.text-secondary {
+  color: rgb(var(--secondary));
+}
+
+.text-accent {
+  color: rgb(var(--accent));
+}
+
+.border-accent {
+  border-color: rgb(var(--accent));
+}
+
+.hover-accent:hover {
+  color: rgb(var(--accent));
+}
+

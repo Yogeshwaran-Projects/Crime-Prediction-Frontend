@@ -4,6 +4,7 @@ import { Home, BarChart2, Map, Settings, HelpCircle } from "lucide-react";
 const menuItems = [
   { name: "Dashboard", icon: Home, href: "/" },
   { name: "Predictions", icon: BarChart2, href: "/predict" },
+  { name: "Crime-Rate", icon: HelpCircle, href: "/rate" },
   { name: "Crime Map", icon: Map, href: "/map" },
   { name: "Settings", icon: Settings, href: "/settings" },
   { name: "Help", icon: HelpCircle, href: "/help" },

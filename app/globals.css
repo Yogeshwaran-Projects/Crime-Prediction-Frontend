@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --primary: 20, 33, 61;
-  --primary-light: 37, 52, 92;
-  --secondary: 208, 240, 255;
-  --accent: 252, 211, 77;
-  --background: 15, 23, 42;
-  --text: 226, 232, 240;
+  --primary: 20, 33, 61; /* Keeping navbar/sidebar color */
+  --primary-light: 37, 52, 92; /* Keeping navbar/sidebar color */
+  --secondary: 120, 124, 130; /* Elegant Cool Gray */
+  --accent: 191, 115, 20; /* Refined Bronze */
+  --background: 248, 249, 250; /* Soft Off-White */
+  --text: 45, 55, 72; /* Professional Dark Blue-Gray */
 }
 
 body {
@@ -45,7 +45,7 @@ body {
 }
 
 .bg-gradient-custom {
-  background: linear-gradient(to bottom, rgb(var(--primary)), rgb(var(--background)));
+  background: linear-gradient(to bottom, rgb(var(--background)), rgb(var(--secondary)));
 }
 
 .shadow-glow {
@@ -56,12 +56,6 @@ body {
   transform: scale(1.05);
   transition: transform 0.2s ease-in-out;
 }
-
-
-
-@layer base {}
-
-
 
 @layer base {
   * {
